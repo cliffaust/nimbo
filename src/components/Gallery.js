@@ -37,10 +37,9 @@ function Gallery() {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    centerPadding: "60px",
     autoplay: true,
-    speed: 5000,
-    autoplaySpeed: 5000,
+    speed: 2000,
+    autoplaySpeed: 2000,
     cssEase: "linear",
   };
   return (
