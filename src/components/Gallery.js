@@ -35,6 +35,7 @@ function Gallery() {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    centerPadding: "60px",
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 2000,
