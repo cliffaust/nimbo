@@ -38,15 +38,15 @@ function Gallery() {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
+    speed: 3500,
+    autoplaySpeed: 3500,
     cssEase: "linear",
   };
   return (
-    <div className="px-12 mt-16 mb-10">
+    <div className="mt-24 mb-10">
       <Slider {...settings}>
         {imageArr.map((image, index) => (
-          <div key={index} className="w-96 h-80 shadow-lg">
+          <div key={index} className="h-80 shadow-lg">
             <img
               src={image}
               className="h-full w-full object-cover rounded-lg"
@@ -55,6 +55,9 @@ function Gallery() {
           </div>
         ))}
       </Slider>
+      <div className="w-48 mx-auto mt-8">
+        <button className="btn w-full bg-primary-yellow">Show More</button>
+      </div>
     </div>
   );
 }

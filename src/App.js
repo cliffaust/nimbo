@@ -5,7 +5,7 @@ import Gallery from "./components/Gallery";
 
 function App() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Header></Header>
       <About></About>
       <Contact></Contact>
