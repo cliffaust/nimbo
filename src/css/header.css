@@ -1,8 +1,8 @@
 .header {
   background-image: linear-gradient(
       to right,
-      rgba(252, 162, 17, 0.3),
-      rgba(252, 162, 17, 0.3)
+      rgba(252, 162, 17, 0.15),
+      rgba(252, 162, 17, 0.15)
     ),
     url("../images/header.jpg");
   background-position: center;

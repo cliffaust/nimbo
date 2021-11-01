@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+  @apply px-10 py-4 border-none rounded-full font-bold tracking-widest font-mono;
+}
+
+.link {
+  @apply cursor-pointer relative after:h-0 hover:after:h-2 after:absolute after:left-0 after:right-0 after:bg-primary-yellow after:bottom-0 after:transition-all
+  after:duration-200
+  after:ease-in-out;
+}
+
+.input {
+  @apply appearance-none
+  leading-tight
+  bg-gray-200
+  border-2
+  border-gray-200
+  focus:outline-none
+  rounded
+  py-3
+  px-2
+  text-gray-700
+  w-full
+  text-sm;
+}
