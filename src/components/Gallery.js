@@ -16,6 +16,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import "../css/gallery.css";
+
 function Gallery() {
   const imageArr = [
     image7,
@@ -37,8 +39,8 @@ function Gallery() {
     slidesToScroll: 1,
     centerPadding: "60px",
     autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
+    speed: 5000,
+    autoplaySpeed: 5000,
     cssEase: "linear",
   };
   return (
