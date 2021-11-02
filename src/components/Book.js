@@ -62,6 +62,20 @@ function Book() {
         <div class="block text-gray-700 text-sm font-bold mb-4 mt-6">
           Select a Plan
         </div>
+        <div className="flex gap-4 items-center">
+          <div className="py-4 px-3 cursor-pointer flex flex-col items-center rounded-md bg-gray-200">
+            <h1 className="block text-lg font-bold">Standard Plan</h1>
+            <h3 className="block text-base mt-2">$250</h3>
+          </div>
+          <div className="py-4 px-3 cursor-pointer flex flex-col items-center rounded-md bg-gray-200">
+            <h1 className="block text-lg font-bold">Premium Plan</h1>
+            <h3 className="block text-base mt-2">$550</h3>
+          </div>
+          <div className="py-4 px-3 cursor-pointer flex flex-col items-center rounded-md bg-gray-200">
+            <h1 className="block text-lg font-bold">Master Plan</h1>
+            <h3 className="block text-base mt-2">$899</h3>
+          </div>
+        </div>
         <button className="btn bg-primary-yellow shadow-md mt-4">
           Book Room
         </button>
