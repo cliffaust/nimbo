@@ -27,6 +27,7 @@ module.exports = {
       height: {
         "95vh": "95vh",
         553: "553px",
+        453: "453px",
       },
 
       fontFamily: {
