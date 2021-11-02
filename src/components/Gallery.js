@@ -18,7 +18,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import "../css/gallery.css";
 
-function Gallery() {
+function Gallery({ gallery }) {
   const imageArr = [
     image7,
     image9,
@@ -43,7 +43,7 @@ function Gallery() {
     cssEase: "linear",
   };
   return (
-    <div className="mt-24 mb-10">
+    <div ref={gallery} className="mt-24 mb-10">
       <Slider {...settings}>
         {imageArr.map((image, index) => (
           <div key={index} className="h-80 shadow-lg">

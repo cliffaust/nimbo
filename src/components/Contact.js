@@ -6,7 +6,7 @@ import image6 from "../images/image6.jpg";
 import { useDispatch } from "react-redux";
 import messageAction from "../actions/message";
 
-function Contact() {
+function Contact({ contact }) {
   const [message, setMessage] = useState({
     email: "",
     message: "",
@@ -27,7 +27,7 @@ function Contact() {
     setMessage({ ...message, [e.target.name]: e.target.value });
   };
   return (
-    <div className="mb-8 mt-28 px-16 flex bg-gray-50 py-4">
+    <div ref={contact} className="mb-8 mt-28 px-16 flex bg-gray-50 py-4">
       <div className="relative w-2/4 h-553">
         <div
           className="h-64 w-72 absolute rounded-md top-0"

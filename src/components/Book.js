@@ -3,7 +3,7 @@ import image19 from "../images/image19.jpg";
 import image20 from "../images/image20.jpg";
 import image21 from "../images/image21.jpg";
 
-function Book() {
+function Book({ book }) {
   const [plan, setPlan] = useState({
     standardPlan: false,
     premiumPlan: false,
@@ -55,7 +55,7 @@ function Book() {
     });
   };
   return (
-    <div className="mb-8 mt-28 px-16 flex bg-gray-50 py-4">
+    <div ref={book} className="mb-8 mt-28 px-16 flex bg-gray-50 py-4">
       <div className="flex-grow flex flex-col">
         <h1 className="text-2xl mb-6 font-mono font-bold">Book a Room</h1>
         <label className="block text-gray-700 text-sm font-bold mb-2">
