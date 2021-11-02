@@ -8,13 +8,21 @@ import Footer from "./components/Footer";
 
 function App() {
   const about = useRef(null);
+  const contact = useRef(null);
+  const gallery = useRef(null);
+  const book = useRef(null);
   return (
     <div className="overflow-x-hidden">
-      <Header about={about}></Header>
+      <Header
+        about={about}
+        contact={contact}
+        gallery={gallery}
+        book={book}
+      ></Header>
       <About about={about}></About>
-      <Contact></Contact>
-      <Gallery></Gallery>
-      <Book></Book>
+      <Contact contact={contact}></Contact>
+      <Gallery gallery={gallery}></Gallery>
+      <Book book={book}></Book>
       <Footer></Footer>
     </div>
   );
