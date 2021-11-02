@@ -58,7 +58,7 @@ function Book() {
     <div className="mb-8 mt-28 px-16 flex bg-gray-50 py-4">
       <div className="flex-grow flex flex-col">
         <h1 className="text-2xl mb-6 font-mono font-bold">Book a Room</h1>
-        <label class="block text-gray-700 text-sm font-bold mb-2">
+        <label className="block text-gray-700 text-sm font-bold mb-2">
           Full Name
         </label>
         <input
@@ -69,7 +69,7 @@ function Book() {
           type="email"
           placeholder="Enter your Full Name"
         />
-        <label class="block text-gray-700 text-sm font-bold mb-2 mt-4">
+        <label className="block text-gray-700 text-sm font-bold mb-2 mt-4">
           Email
         </label>
         <input
@@ -80,7 +80,7 @@ function Book() {
           type="email"
           placeholder="Enter Email"
         />
-        <label class="block text-gray-700 text-sm font-bold mb-2 mt-4">
+        <label className="block text-gray-700 text-sm font-bold mb-2 mt-4">
           Phone Number
         </label>
         <input
@@ -91,7 +91,7 @@ function Book() {
           type="text"
           placeholder="Enter Phone Number"
         />
-        <div class="block text-gray-700 text-sm font-bold mb-4 mt-6">
+        <div className="block text-gray-700 text-sm font-bold mb-4 mt-6">
           Select a Plan
         </div>
         <div className="flex gap-4 items-center">

@@ -7,59 +7,59 @@ function Footer() {
       <div className="font-ceviche text-5xl text-white cursor-pointer">
         Nimbo
       </div>
-      <div class="mt-4 flex flex-wrap mb-12">
-        <div class="link-box">
+      <div className="mt-4 flex flex-wrap mb-12">
+        <div className="link-box">
           <div className="text-sm font-bold">How we work</div>
         </div>
-        <div class="link-box">
+        <div className="link-box">
           <div className="text-sm font-bold">Help & Support</div>
         </div>
-        <div class="link-box">
+        <div className="link-box">
           <div className="text-sm font-bold">Return Policy</div>
         </div>
-        <div class="link-box">
+        <div className="link-box">
           <div className="text-sm font-bold">Privacy & Policy</div>
         </div>
-        <div class="link-box">
+        <div className="link-box">
           <div className="text-sm font-bold">Contact Us</div>
         </div>
-        <div class="link-box">
+        <div className="link-box">
           <div className="text-sm font-bold">Our service</div>
         </div>
-        <div class="link-box">
+        <div className="link-box">
           <div className="text-sm font-bold">Book a room</div>
         </div>
-        <div class="link-box">
+        <div className="link-box">
           <div className="text-sm font-bold">Blog</div>
         </div>
-        <div class="link-box">
+        <div className="link-box">
           <div className="text-sm font-bold">Help & Support</div>
         </div>
-        <div class="link-box">
+        <div className="link-box">
           <div className="text-sm font-bold">Return Policy</div>
         </div>
-        <div class="link-box">
+        <div className="link-box">
           <div className="text-sm font-bold">Privacy & Policy</div>
         </div>
-        <div class="link-box">
+        <div className="link-box">
           <div className="text-sm font-bold">Contact Us</div>
         </div>
-        <div class="link-box">
+        <div className="link-box">
           <div className="text-sm font-bold">Our service</div>
         </div>
-        <div class="link-box">
+        <div className="link-box">
           <div className="text-sm font-bold">Book a room</div>
         </div>
-        <div class="link-box">
+        <div className="link-box">
           <div className="text-sm font-bold">Blog</div>
         </div>
-        <div class="link-box">
+        <div className="link-box">
           <div className="text-sm font-bold">Contact Us</div>
         </div>
       </div>
-      <div class="mt-5 flex items-center gap-4 justify-center">
+      <div className="mt-5 flex items-center gap-4 justify-center">
         <div
-          class="
+          className="
               w-14
               h-14
               rounded-full
@@ -100,7 +100,7 @@ function Footer() {
           </svg>
         </div>
         <div
-          class="
+          className="
               w-14
               h-14
               rounded-full
