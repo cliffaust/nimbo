@@ -4,6 +4,11 @@ import image20 from "../images/image20.jpg";
 import image21 from "../images/image21.jpg";
 
 function Book() {
+  const [plan, setPlan] = useState({
+    standardPlan: false,
+    premiumPlan: false,
+    masterPlan: false,
+  });
   const [room, setRoom] = useState({
     full_name: "",
     email: "",
@@ -21,6 +26,33 @@ function Book() {
 
   const handleOnChangeInput = (e) => {
     setRoom({ ...room, [e.target.name]: e.target.value });
+  };
+
+  const changeStandardPlanSate = () => {
+    setPlan({
+      ...plan,
+      standardPlan: true,
+      premiumPlan: false,
+      masterPlan: false,
+    });
+  };
+
+  const changePremiumPlanSate = () => {
+    setPlan({
+      ...plan,
+      standardPlan: false,
+      premiumPlan: true,
+      masterPlan: false,
+    });
+  };
+
+  const changeMasterPlanSate = () => {
+    setPlan({
+      ...plan,
+      standardPlan: false,
+      premiumPlan: false,
+      masterPlan: true,
+    });
   };
   return (
     <div className="mb-8 mt-28 px-16 flex bg-gray-50 py-4">
@@ -63,15 +95,27 @@ function Book() {
           Select a Plan
         </div>
         <div className="flex gap-4 items-center">
-          <div className="py-4 px-3 cursor-pointer flex flex-col items-center rounded-md bg-gray-200">
+          <div
+            style={{ backgroundColor: plan.standardPlan ? "#fca311" : "" }}
+            className="py-4 px-3 cursor-pointer flex flex-col items-center rounded-md bg-gray-200"
+            onClick={changeStandardPlanSate}
+          >
             <h1 className="block text-lg font-bold">Standard Plan</h1>
             <h3 className="block text-base mt-2">$250</h3>
           </div>
-          <div className="py-4 px-3 cursor-pointer flex flex-col items-center rounded-md bg-gray-200">
+          <div
+            style={{ backgroundColor: plan.premiumPlan ? "#fca311" : "" }}
+            className="py-4 px-3 cursor-pointer flex flex-col items-center rounded-md bg-gray-200"
+            onClick={changePremiumPlanSate}
+          >
             <h1 className="block text-lg font-bold">Premium Plan</h1>
             <h3 className="block text-base mt-2">$550</h3>
           </div>
-          <div className="py-4 px-3 cursor-pointer flex flex-col items-center rounded-md bg-gray-200">
+          <div
+            style={{ backgroundColor: plan.masterPlan ? "#fca311" : "" }}
+            className="py-4 px-3 cursor-pointer flex flex-col items-center rounded-md bg-gray-200"
+            onClick={changeMasterPlanSate}
+          >
             <h1 className="block text-lg font-bold">Master Plan</h1>
             <h3 className="block text-base mt-2">$899</h3>
           </div>
