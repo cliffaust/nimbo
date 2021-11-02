@@ -13,7 +13,12 @@ function Header({ about }) {
           <li className="text-white font-mono link">Home</li>
           <li
             className="text-white font-mono link"
-            onClick={() => about.current.scrollIntoView()}
+            onClick={() =>
+              about.current.scrollIntoView({
+                behavior: "smooth",
+                block: "center",
+              })
+            }
           >
             About
           </li>
