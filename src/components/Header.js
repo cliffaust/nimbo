@@ -2,7 +2,7 @@ import React from "react";
 import "../css/header.css";
 import { gsap } from "gsap";
 
-function Header({ about }) {
+function Header({ about, contact, gallery, book }) {
   return (
     <div className="header h-95vh w-full relative">
       <div className="px-16 py-4 flex items-center justify-between">
@@ -22,9 +22,39 @@ function Header({ about }) {
           >
             About
           </li>
-          <li className="text-white font-mono link">Contact us</li>
-          <li className="text-white font-mono link">Gallery</li>
-          <li className="text-white font-mono link">Book</li>
+          <li
+            className="text-white font-mono link"
+            onClick={() =>
+              contact.current.scrollIntoView({
+                behavior: "smooth",
+                block: "center",
+              })
+            }
+          >
+            Contact us
+          </li>
+          <li
+            className="text-white font-mono link"
+            onClick={() =>
+              gallery.current.scrollIntoView({
+                behavior: "smooth",
+                block: "center",
+              })
+            }
+          >
+            Gallery
+          </li>
+          <li
+            className="text-white font-mono link"
+            onClick={() =>
+              book.current.scrollIntoView({
+                behavior: "smooth",
+                block: "center",
+              })
+            }
+          >
+            Book
+          </li>
         </ul>
       </div>
       <div className="absolute top-2/4 left-2/4 w-full -translate-x-2/4 -translate-y-2/4">
