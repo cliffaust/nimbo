@@ -10,7 +10,7 @@ function App() {
   const about = useRef(null);
   return (
     <div className="overflow-x-hidden">
-      <Header></Header>
+      <Header about={about}></Header>
       <About about={about}></About>
       <Contact></Contact>
       <Gallery></Gallery>

@@ -1,9 +1,8 @@
-import React, { useRef } from "react";
+import React from "react";
 import "../css/header.css";
 import { gsap } from "gsap";
 
-function Header() {
-  const headerText = useRef(null);
+function Header({ about }) {
   return (
     <div className="header h-95vh w-full relative">
       <div className="px-16 py-4 flex items-center justify-between">
@@ -14,7 +13,7 @@ function Header() {
           <li className="text-white font-mono link">Home</li>
           <li
             className="text-white font-mono link"
-            onClick={() => headerText.current.scrollIntoView()}
+            onClick={() => about.current.scrollIntoView()}
           >
             About
           </li>
@@ -23,10 +22,7 @@ function Header() {
           <li className="text-white font-mono link">Book</li>
         </ul>
       </div>
-      <div
-        ref={headerText}
-        className="absolute top-2/4 left-2/4 w-full -translate-x-2/4 -translate-y-2/4"
-      >
+      <div className="absolute top-2/4 left-2/4 w-full -translate-x-2/4 -translate-y-2/4">
         <h1 className="font-noto text-center text-primary-blue-200 text-4xl font-bold tracking-widest">
           Hotel Made for the Fun and Luxury
         </h1>
