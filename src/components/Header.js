@@ -16,6 +16,7 @@ function Header({ about, contact, gallery, book }) {
             onClick={() =>
               about.current.scrollIntoView({
                 behavior: "smooth",
+                block: "center",
               })
             }
           >
@@ -26,6 +27,7 @@ function Header({ about, contact, gallery, book }) {
             onClick={() =>
               contact.current.scrollIntoView({
                 behavior: "smooth",
+                block: "center",
               })
             }
           >
